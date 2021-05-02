@@ -1,0 +1,12 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+azure-functions
+certifi==2020.12.05
+chardet==4.0.0
+idna==2.10
+chess==1.4.0
+PyYAML>=5.4.1
+requests>=2.25.1
+urllib3==1.26.3
+backoff==1.10.0
