@@ -83,9 +83,6 @@ def start(li, user_profile, engine_factory, config):
                 break
             elif event["type"] == "local_game_done":
                 busy_processes -= 1
-                if busy_processes == 0:
-                    li.challenge_ai(8, 60, 0)
-                    busy_processes += 1
                 logger.info("+++ Process Free. Total Queued: {}. Total Used: {}".format(queued_processes, busy_processes))
             elif event["type"] == "challenge":
                 chlng = model.Challenge(event["challenge"])
